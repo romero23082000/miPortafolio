@@ -3,7 +3,7 @@ import './contact.css'
 import Phone from "../../img/phone.png";
 import Email from "../../img/email.png";
 import Address from "../../img/address.png";
-import { useRef, useState, useContext } from 'react';
+import { useRef, useState } from 'react';
 import emailjs from 'emailjs-com';
 
 
@@ -12,7 +12,7 @@ const contact = () => {
   // eslint-disable-next-line react-hooks/rules-of-hooks
   const formRef = useRef();
   // eslint-disable-next-line react-hooks/rules-of-hooks
-  const [done, setDone] = useState(false)
+  const [done] = useState(false)
   const handleSubmit = (e) => {
     e.preventDefault()
     emailjs.sendForm('service_iq4f34s', 'template_3tzj1i4', formRef.current, 'user_NkdFi9IDbVs9vOsTfsSez')

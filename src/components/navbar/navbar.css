@@ -1,0 +1,81 @@
+/* Estilos generales */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+}
+ul{
+  list-style: none;
+}
+
+img{
+  width: 100%;
+}
+/* Fin de estilos generales */
+header {
+  width: 100%;
+  background-color: var(--light-three);
+  overflow: hidden;
+  position: relative;
+}
+
+nav{
+  width: 100%;
+  position: relative;
+  z-index: 50;
+}
+
+.container{
+  max-width: 92rem;
+  padding: 0 4rem;
+  margin: 0 auto;
+  position: relative;
+  z-index: 5;
+}
+
+nav .container{
+  display: flex;
+  justify-content: space-between;
+  height: 6rem;
+  align-items: center;
+}
+
+.logo{
+  width: 100px;
+  display: flex;
+  align-items: center;
+}
+
+.links ul{
+  display: flex;
+}
+.links a{
+  display: inline-block;
+  padding: 0.9rem 1.2rem;
+  font-size: 1.05rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: black;
+  transition: 0.3s;
+}
+.links a.active{
+  background-color: rgb(2, 195, 243);
+  color: aliceblue;
+  border-radius: 2rem;
+  font-size: 1rem;
+  margin-left: 1rem;
+  padding: 0.7rem 1.9rem;
+}
+
+.links a:hover{
+  color: rgb(14, 161, 247);
+}
+.links a.active:hover{
+  color: aliceblue;
+  background-color: rgb(2, 195, 243);
+}
